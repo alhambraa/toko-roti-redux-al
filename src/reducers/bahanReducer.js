@@ -23,14 +23,14 @@ const bahanReducer = (state = initialBahan, action) => {
     }
     return newState;
   }else if(action.type === 'BUAT_CAKE'){
-    const newState = {
+    const newState2 = {
       tepung: state.tepung,
       coklat: state.coklat,
       cherry: state.cherry - 10,
       mentega: state.mentega - 50,
       telor: state.telor - 5,
     }
-    return newState;
+    return newState2;
     }
   return state;
 }

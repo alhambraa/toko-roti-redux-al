@@ -13,20 +13,20 @@ const transactionReducer = (state = initialWallet, action) => {
     }
     return newState;
   } else if (action.type === 'REFUND_DONAT') {
-    const newState = {
+    const newState2 = {
       wallet: state.wallet - 12500
     }
-    return newState
+    return newState2
   } else if (action.type === 'BELI_CAKE'){
-    const newState = {
+    const newState3 = {
       wallet: state.wallet + 50000
     }
-    return newState
+    return newState3
   } else if (action.type === 'REFUND_CAKE'){
-    const newState = {
+    const newState4 = {
       wallet: state.wallet - 25000
     }
-    return newState
+    return newState4
   }
   return state;
 }
